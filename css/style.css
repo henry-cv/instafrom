@@ -1,0 +1,248 @@
+/* Para la sección principal */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* Para encabezado y pie */
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* En este caso a partir de un diseño Mobile First */
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: 'Inter';
+}
+.cabecera{
+  align-items: center;  
+  border-bottom: 0.4px solid rgba(34, 34, 34, 0.50);
+  display: flex;
+  font-family: 'Roboto';
+  justify-content: space-between;  
+  margin-bottom: 30px;
+  padding: 20px 25px;
+  width: 100%;
+}
+.cabecera>h1{  
+  font-size: 25px;
+}
+.cabecera #buscador, .lateral{
+  display: none;
+}
+img{
+  border-radius: 50%;  
+}
+.menu-superior {
+  border: 0.4px solid rgba(34, 34, 34, 0.50);
+  border-radius: 5px;  
+  height: 100px;
+  margin: 0 auto;
+  width: 90%;  
+}
+.menu-superior>ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.menu-superior>ul>li{
+  list-style-type:none;  
+}
+.menu-superior>ul>li:nth-child(5), .menu-superior>ul>li:nth-child(6), .menu-superior>ul>li:nth-child(7){
+  display: none;
+}
+.root{  
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 360px;
+}
+.principal{
+  border-radius: 5px;
+  border: 0.4px solid rgba(34, 34, 34, 0.50);
+  background: #FFF;
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90%;  
+}
+.mi-avatar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 67px;
+  padding-left: 10px;
+  padding-right: 10px;  
+}
+.mi-avatar .foto-nombre {
+  align-items: center; 
+  column-gap: 10px;
+  display: grid;
+  font-size: 15px;
+  grid-template-columns: auto auto;   
+}
+
+#publicacion {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;  
+  margin: 0 auto;  
+  width: 90%;
+}
+.perfil-visto {
+  height: auto;
+  margin: 15px 0; 
+  width: 100%;
+}
+.perfil-visto>img {
+  border-radius: 0;
+  display: block; 
+  margin: 0 auto;
+  width: 100%;
+}
+
+.publicacion {
+  display: grid;
+  font-size: 10px;
+  grid-template-rows: repeat(4, auto);    
+  padding-bottom: 15px;
+  row-gap: 10px;
+  width: 264px;  
+}
+.interaccion{
+  margin: 5px 0;
+  width: 100%;
+}
+.interaccion>ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: start;
+  column-gap: 20px;
+}
+.interaccion>ul>li{
+  list-style-type: none;
+}
+.interaccion img{
+  cursor:pointer;
+}
+.publicacion>a{  
+  color: #A49B9B;
+  font-family: Inter;    
+  text-decoration: none;
+}
+.publicacion .comentarista{
+  font-weight: 700;
+}
+footer{
+  background-color: black;
+  color: white;
+  font-family: 'Roboto';
+  margin-top: 100px;
+  padding: 10px 0;
+}
+footer p{  
+  text-align: center;
+}
+@media screen and (min-width:920px) {
+  body {    
+    align-content: center;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;    
+    flex-direction: row;
+    flex-wrap: wrap;    
+  }
+  .cabecera {
+    justify-content: space-between;
+    padding: 20px 30px;
+  }  
+  .cabecera #buscador{
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 400px;
+  } 
+  .menu-superior{
+    height: 100px;
+    min-width: 600px;
+    max-width: 65%;
+  }
+  .menu-superior>ul{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .menu-superior>ul>li img{
+    height: auto;
+    width: 60px;
+  }
+  .menu-superior>ul>li:nth-child(5), .menu-superior>ul>li:nth-child(6), .menu-superior>ul>li:nth-child(7){
+    display: block;
+  }  
+  .principal {
+    min-width: 600px;
+    max-width: 65%;
+  }  
+  .perfil-visto>img {
+    height: auto;    
+  }
+  
+  .lateral{
+    border: 1px solid black;
+    display: block;    
+    width: 284px;
+  }
+  .lateral a{
+    font-size: 12px;
+    text-decoration: none;
+  }    
+  .micuenta {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    height: 95px;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+  }
+  .micuenta img{
+    width: 50px;
+  }    
+  .usuario {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .alias{
+    letter-spacing: 5px;
+  }    
+  .micuenta a{
+    align-self: center;    
+    margin-left: 30%;
+  }
+  .sugerencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .sugerencia figure {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+  }
+  .sugerencia img{
+    height: auto;
+    width: 30px;
+  }
+  .p-sugerencias{
+    justify-self: baseline;
+    color: #808080;
+  }
+  footer{
+    width: 100%;
+  }
+}
