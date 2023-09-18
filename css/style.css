@@ -39,12 +39,12 @@ img{
   width: 90%;  
 }
 .menu-superior>ul {
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: space-evenly;
-  align-items: center;
-  justify-items: center;
   height: 100%;
+  justify-content: space-evenly;  
+  justify-items: center;  
 }
 
 .menu-superior>ul>li{
@@ -59,9 +59,9 @@ img{
   min-width: 360px;
 }
 .principal{
-  border-radius: 5px;
-  border: 0.4px solid rgba(34, 34, 34, 0.50);
   background: #FFF;
+  border: 0.4px solid rgba(34, 34, 34, 0.50);
+  border-radius: 5px;    
   display:flex;
   flex-direction: column;
   margin: 0 auto;
@@ -116,16 +116,16 @@ img{
   width: 100%;
 }
 .interaccion>ul {
+  column-gap: 20px;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  justify-content: start;
-  column-gap: 20px;
+  justify-content: start;  
 }
 .interaccion>ul>li{
   list-style-type: none;
 }
 .interaccion img{
-  cursor:pointer;
+  cursor: pointer;
 }
 .publicacion>a{  
   color: #A49B9B;
@@ -150,9 +150,9 @@ footer p{
     align-content: center;
     align-items: flex-start;
     display: flex;
-    justify-content: space-around;    
     flex-direction: row;
     flex-wrap: wrap;    
+    justify-content: space-around;        
   }
   .cabecera {
     justify-content: space-between;
@@ -167,8 +167,8 @@ footer p{
   } 
   .menu-superior{
     height: 100px;
-    min-width: 600px;
     max-width: 65%;
+    min-width: 600px;    
   }
   .menu-superior>ul{
     display:grid;
@@ -182,15 +182,14 @@ footer p{
     display: block;
   }  
   .principal {
-    min-width: 600px;
     max-width: 65%;
+    min-width: 600px;    
   }  
   .perfil-visto>img {
     height: auto;    
   }
   
-  .lateral{
-    border: 1px solid black;
+  .lateral{    
     display: block;    
     width: 284px;
   }
@@ -199,13 +198,13 @@ footer p{
     text-decoration: none;
   }    
   .micuenta {
+    align-items: center;
+    column-gap: 10px;
     display: flex;
     flex-wrap: wrap;
     font-size: 10px;
-    height: 95px;
-    align-items: center;
-    justify-content: flex-start;
-    column-gap: 10px;
+    height: 95px;    
+    justify-content: flex-start;    
   }
   .micuenta img{
     width: 50px;
@@ -223,24 +222,24 @@ footer p{
     margin-left: 30%;
   }
   .sugerencia {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
+    justify-content: space-between;    
     margin: 10px 0;
   }
   .sugerencia figure {
     align-items: center;
-    display: flex;
-    justify-content: center;
     column-gap: 10px;
+    display: flex;
+    justify-content: center;    
   }
   .sugerencia img{
     height: auto;
     width: 30px;
   }
   .p-sugerencias{
-    justify-self: baseline;
     color: #808080;
+    justify-self: baseline;    
   }
   footer{
     width: 100%;
