@@ -191,7 +191,8 @@ footer p{
   
   .lateral{    
     display: block;    
-    width: 284px;
+    margin-right: 15px;
+    width: 284px;    
   }
   .lateral a{
     font-size: 12px;
